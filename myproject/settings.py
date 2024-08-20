@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0xcnnyo#aktyr8uqo3jwqfp#im31!f71t0zvnqhi6o_s8v1yb(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['timeseries-wb8m.onrender.com']
 
 
 # Application definition
