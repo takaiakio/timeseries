@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Upload</title>
+</head>
+<body>
+    <h1>Upload CSV File</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="csv_file" accept=".csv" />
+        <button type="submit">Upload</button>
+    </form>
+    {% if graph_url %}
+        <h2>Time Series Graph</h2>
+        <img src="{{ graph_url }}" alt="Graph" />
+    {% endif %}
+</body>
+</html>
